@@ -13,6 +13,9 @@
 (setq browse-url-browser-function 'browse-url-firefox)
 
 (evil-mode 1)
+(global-evil-leader-mode)
+
+(evil-leader/set-key "f" 'fzf)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -25,7 +28,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (fzf powerline markdown-mode atom-one-dark-theme yaml-mode evil goto-chg undo-tree))))
+    (groovy-mode magit evil-leader fzf powerline markdown-mode atom-one-dark-theme yaml-mode evil goto-chg undo-tree))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
