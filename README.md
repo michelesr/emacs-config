@@ -1,6 +1,10 @@
 # Installation
 
-Clone the repo and symlink the `emacs` file in the root directory to `~/.emacs`.
+Symlink the config file:
+
+```
+ln -s $PWD/.emacs $HOME/.emacs
+```
 
 On the first run:
 
