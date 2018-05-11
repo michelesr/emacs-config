@@ -10,6 +10,9 @@
 (require 'powerline)
 (powerline-default-theme)
 
+(add-hook 'python-mode-hook 'jedi:setup)
+(setq jedi:complete-on-dot t)
+
 (setq browse-url-browser-function 'browse-url-firefox)
 
 (evil-mode 1)
@@ -29,7 +32,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (ranger helm groovy-mode magit evil-leader fzf powerline markdown-mode atom-one-dark-theme yaml-mode evil goto-chg undo-tree))))
+    (jedi ranger helm groovy-mode magit evil-leader fzf powerline markdown-mode atom-one-dark-theme yaml-mode evil goto-chg undo-tree))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
