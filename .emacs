@@ -7,6 +7,11 @@
 (load-theme 'atom-one-dark t)
 (set-default-font "Liberation Mono 10")
 
+(require 'powerline)
+(powerline-default-theme)
+
+(setq browse-url-browser-function 'browse-url-firefox)
+
 (evil-mode 1)
 
 (custom-set-variables
@@ -20,7 +25,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (atom-one-dark-theme yaml-mode evil goto-chg undo-tree))))
+    (fzf powerline markdown-mode atom-one-dark-theme yaml-mode evil goto-chg undo-tree))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
