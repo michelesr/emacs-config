@@ -4,6 +4,9 @@
 (package-initialize)
 
 (tool-bar-mode -1)
+(menu-bar-mode -1)
+(scroll-bar-mode -1)
+
 (load-theme 'atom-one-dark t)
 (set-default-font "Liberation Mono 10")
 
