@@ -16,6 +16,7 @@
 (global-evil-leader-mode)
 
 (evil-leader/set-key "f" 'fzf)
+(evil-leader/set-key "r" 'ranger)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -28,7 +29,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (groovy-mode magit evil-leader fzf powerline markdown-mode atom-one-dark-theme yaml-mode evil goto-chg undo-tree))))
+    (ranger helm groovy-mode magit evil-leader fzf powerline markdown-mode atom-one-dark-theme yaml-mode evil goto-chg undo-tree))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
