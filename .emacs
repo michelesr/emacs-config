@@ -38,7 +38,9 @@
 
 (setq browse-url-browser-function 'browse-url-firefox)
 
-(evil-mode 1)
+(evil-mode 1)(recentf-mode 1)
+(setq recentf-max-menu-items 25)
+
 (global-evil-leader-mode)
 
 (evil-leader/set-key "f" 'fzf)
