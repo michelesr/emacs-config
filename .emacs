@@ -42,3 +42,5 @@
 
 (evil-leader/set-key "f" 'fzf)
 (evil-leader/set-key "r" 'ranger)
+
+(global-set-key (kbd "C-x C-j") 'evil-local-mode)
