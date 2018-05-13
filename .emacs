@@ -43,8 +43,9 @@
 
 (global-evil-leader-mode)
 
-(evil-leader/set-key "f" 'fzf)
-(evil-leader/set-key "h" 'recentf-open-files)
+(evil-leader/set-key "f" 'helm-for-files)
+(evil-leader/set-key "h" 'helm-recentf)
+(evil-leader/set-key "t" 'helm-etags-select)
 (evil-leader/set-key "r" 'ranger)
 
 (global-set-key (kbd "C-x C-j") 'evil-local-mode)
