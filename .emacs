@@ -25,6 +25,7 @@
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
+(global-linum-mode t)
 
 (load-theme 'atom-one-dark t)
 (set-default-font "Liberation Mono 10")
@@ -41,6 +42,7 @@
 (global-evil-leader-mode)
 
 (evil-leader/set-key "f" 'fzf)
+(evil-leader/set-key "h" 'recentf-open-files)
 (evil-leader/set-key "r" 'ranger)
 
 (global-set-key (kbd "C-x C-j") 'evil-local-mode)
