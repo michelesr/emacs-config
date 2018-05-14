@@ -27,6 +27,18 @@
 (scroll-bar-mode -1)
 (global-linum-mode t)
 
+(setq-default indent-tabs-mode nil)
+(setq-default ruby-indent-level 2)
+(setq-default evil-shift-width 2)
+(setq-default python-indent 4)
+
+(add-hook 'python-mode-hook
+  (function (lambda ()
+          (setq evil-shift-width python-indent))))
+(add-hook 'ruby-mode-hook
+  (function (lambda ()
+          (setq evil-shift-width ruby-indent-level))))
+
 (load-theme 'atom-one-dark t)
 (set-default-font "Liberation Mono 10")
 
@@ -38,7 +50,8 @@
 
 (setq browse-url-browser-function 'browse-url-firefox)
 
-(evil-mode 1)(recentf-mode 1)
+(evil-mode 1)
+(recentf-mode 1)
 (setq recentf-max-menu-items 25)
 
 (global-evil-leader-mode)
